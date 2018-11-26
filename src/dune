@@ -1,0 +1,11 @@
+(library
+ (name usb)
+ (libraries 
+   core
+   lwt
+   lwt.unix)
+ (c_names usb_stubs)
+ (c_flags (-I/usr/include/libusb-1.0))
+ (c_library_flags (-lusb-1.0))
+ (preprocess (pps ppx_jane ppx_expect ppx_let lwt_ppx))
+ (inline_tests))
