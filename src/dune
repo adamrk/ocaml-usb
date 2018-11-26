@@ -9,3 +9,7 @@
  (c_library_flags (-lusb-1.0))
  (preprocess (pps ppx_jane ppx_expect ppx_let lwt_ppx))
  (inline_tests))
+
+(env
+  (dev
+    (flags (:standard -warn-error -3 -warn-error -27 -warn-error -37))))
