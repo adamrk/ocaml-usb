@@ -1,0 +1,8 @@
+(executable
+ (name list_devices)
+ (libraries
+   lwt
+   lwt.unix
+   USB)
+ (preprocess (pps ppx_jane ppx_expect ppx_let lwt_ppx)))
+ 

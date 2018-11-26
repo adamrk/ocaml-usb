@@ -7,7 +7,7 @@
  * This file is a part of ocaml-usb.
  *)
 
-open Lwt
+open! Lwt
 
 let _ =
   List.iter
